@@ -1,6 +1,5 @@
 """
 AI-Powered Scam Detection System
-Module 1 - Prompt Engineering and API Integration
 
 Skills practiced:
   - LLMs for message analysis
@@ -8,18 +7,10 @@ Skills practiced:
   - Intent extraction
   - Fraud pattern detection
   - Explaining risk in layman's terms
+  """
 
-FREE VERSION using Google Gemini API (free tier, no credit card).
 
-Setup:
-  1. Get a free key: https://aistudio.google.com/apikey
-  2. pip install google-genai
-  3. export GEMINI_API_KEY="your-key"      (Windows: set GEMINI_API_KEY=your-key)
 
-Run:
-  python scam_detector_gemini.py            # runs built-in samples
-  python scam_detector_gemini.py --chat     # paste your own messages
-"""
 
 import json
 import os
@@ -30,9 +21,7 @@ import time
 from google import genai
 from google.genai import types
 
-# Google retired gemini-2.5-flash-lite for new users, so we use 3.5 Flash-Lite.
-# If the name is rejected, check the current model list in Google AI Studio
-# and set SCAM_MODEL (or edit the name below).
+
 MODEL = os.getenv("SCAM_MODEL", "gemini-3.5-flash-lite")
 
 # ---------------------------------------------------------------------------
