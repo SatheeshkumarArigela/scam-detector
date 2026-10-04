@@ -1,6 +1,6 @@
 """
 Web app for the AI Scam Detector (Streamlit).
-Needs scam_detector_gemini.py in the same folder.
+
 """
 
 import os
